@@ -18,7 +18,9 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - run: echo "Goedemorgen"
-
+      
+      - run: composer install
       - run: vendor/bin/phpstan analyse
       - run: vendor/bin/pint --test
       - run: npx playwright test
+      
