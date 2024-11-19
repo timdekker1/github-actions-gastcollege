@@ -20,3 +20,5 @@ jobs:
       - run: echo "Goedemorgen"
 
       - run: vendor/bin/phpstan analyse
+      - run: vendor/bin/pint --test
+      
